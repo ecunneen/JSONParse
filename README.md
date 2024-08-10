@@ -29,7 +29,7 @@ Ensure you have Python 3 installed on your system. You can verify this by runnin
 python --version
 ```
 
-Usage
+## Usage
 
 The application is run from the command line. Below is the general syntax:
 
@@ -38,7 +38,7 @@ The application is run from the command line. Below is the general syntax:
 python filter_csv.py --input <input_json_file> --output <output_csv_file> --search_field <search_field> --search_term <search_term> --output_cols <output_columns>
 ```
 
-Arguments
+## Arguments
 
     --input: Path to the input JSON file (required).
     --output: Path to the output CSV file (required).
@@ -46,7 +46,7 @@ Arguments
     --search_term: The term to search for in the specified field (required).
     --output_cols: Comma-separated list of fields from the JSON to include in the CSV output (required).
 
-Example
+## Example
 
 Suppose you have a JSON file data.json containing data records, and you want to filter records that have "Python" in their languages field and output their externalId, firstName, and lastName to filtered_data.csv.
 
@@ -56,7 +56,7 @@ You would run:
 
 python filter_csv.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
 ```
-Logging
+## Logging
 
 The application logs its operations to the console. You will see information about the number of filtered records and any errors that occur during processing.
 Error Handling
@@ -65,16 +65,16 @@ Error Handling
     ValueError: If the specified search field is not present in the JSON data, the application will exit with a message indicating the issue.
     Invalid JSON: Lines with invalid JSON will be skipped, and a warning will be logged.
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Contact
+## Contact
 
 For any issues or questions, please feel free to contact Edward Cunneen.
-Code Overview
+## Code Overview
 Python Script
 
 The core functionality is implemented in json_filter.py. Below is a summary of the key functions and their responsibilities:
@@ -93,7 +93,7 @@ The core functionality is implemented in json_filter.py. Below is a summary of t
 
     main(input_json_file, output_csv_file, search_field, search_term, output_cols): Orchestrates the overall filtering process, handling errors and managing the flow of data.
 
-How to Run
+## How to Run
 
 You can run the script directly from the command line with the necessary arguments. For example:
 
