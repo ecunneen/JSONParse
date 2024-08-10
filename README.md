@@ -1,6 +1,5 @@
-markdown
 
-# JSON Filter to CSV Converter
+# JSON to CSV Converter with Filtering
 
 This Python application filters JSON data based on specified search criteria and outputs the filtered data as a CSV file. The application is designed to handle large JSON files by processing each line individually, making it efficient for a variety of use cases.
 
@@ -21,22 +20,23 @@ This Python application filters JSON data based on specified search criteria and
 Clone the repository or download the script:
 
 ```bash
-git clone https://github.com/yourusername/json-filter-csv.git
-cd json-filter-csv
+git clone https://github.com/ecunneen/JSONParse.git
+```
 
 Ensure you have Python 3 installed on your system. You can verify this by running:
 
-bash
-
+```bash
 python --version
+```
 
 Usage
 
 The application is run from the command line. Below is the general syntax:
 
-bash
+```bash
 
 python json_filter.py --input <input_json_file> --output <output_csv_file> --search_field <search_field> --search_term <search_term> --output_cols <output_columns>
+```
 
 Arguments
 
@@ -52,10 +52,10 @@ Suppose you have a JSON file data.json containing data records, and you want to 
 
 You would run:
 
-bash
+```bash
 
 python json_filter.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
-
+```
 Logging
 
 The application logs its operations to the console. You will see information about the number of filtered records and any errors that occur during processing.
@@ -100,5 +100,5 @@ You can run the script directly from the command line with the necessary argumen
 ```bash
 
 python json_filter.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
-
+```
 The application will process the JSON file, filter the data based on your criteria, and output the results in the specified CSV file.
