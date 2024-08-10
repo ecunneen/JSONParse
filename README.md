@@ -35,7 +35,7 @@ The application is run from the command line. Below is the general syntax:
 
 ```bash
 
-python json_filter.py --input <input_json_file> --output <output_csv_file> --search_field <search_field> --search_term <search_term> --output_cols <output_columns>
+python filter_csv.py --input <input_json_file> --output <output_csv_file> --search_field <search_field> --search_term <search_term> --output_cols <output_columns>
 ```
 
 Arguments
@@ -54,7 +54,7 @@ You would run:
 
 ```bash
 
-python json_filter.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
+python filter_csv.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
 ```
 Logging
 
@@ -99,6 +99,6 @@ You can run the script directly from the command line with the necessary argumen
 
 ```bash
 
-python json_filter.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
+python filter_csv.py --input data.json --output filtered_data.csv --search_field languages --search_term Python --output_cols externalId,firstName,lastName
 ```
 The application will process the JSON file, filter the data based on your criteria, and output the results in the specified CSV file.
